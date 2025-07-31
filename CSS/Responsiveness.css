@@ -318,10 +318,7 @@
   gap: 2rem;
   }
   .button{
-  width: 60%;
   font-size: 0.9rem;
-  text-align: center;
-  align-items: center;
   }
 }
 @media (max-width: 400px) {
