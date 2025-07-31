@@ -80,8 +80,7 @@ header {
   top: 0;
 }
 .logo img {
-  filter: invert(100%) sepia(0%) hue-rotate(196deg) brightness(103%)
-    contrast(103%);
+ filter: brightness(0) saturate(100%) invert(47%) sepia(85%) saturate(2006%) hue-rotate(171deg) brightness(100%) contrast(109%);
   height: 70px;
   width: auto;
 }
@@ -472,6 +471,7 @@ footer {
   padding: 0 5rem 1rem;
 }
 .logo-footer {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(85%) saturate(2006%) hue-rotate(171deg) brightness(100%) contrast(109%);
   padding-top: 2rem;
   height: 100px;
   width: auto;
@@ -486,5 +486,5 @@ footer {
 }
 footer .social a svg {
   border: 1px solid #767676;
-  fill: #fff;
+  fill:  #00aaff;
 }
