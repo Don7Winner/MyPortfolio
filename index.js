@@ -140,4 +140,22 @@ $(document).ready(function () {
       );
     }
   });
+   // Intersection Observer for stats animation
+  const statsGrid = document.querySelector('[data-animate="stats"]');
+  if (statsGrid) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.stat').forEach((stat) => {
+              stat.classList.add('animate');
+            });
+            observer.unobserve(entry.target); // Stop observing after animation
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the element is visible
+    );
+    observer.observe(statsGrid);
+  }
 });
