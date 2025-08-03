@@ -42,6 +42,9 @@
   #AboutMe {
     padding: 0 2rem;
   }
+  .container {
+    padding: 0 2rem;
+}
 }
 @media (max-width: 896px) {
   h1 {
@@ -198,6 +201,12 @@
   footer .social {
     justify-self: flex-end;
   }
+  .container {
+    padding: 0 5rem;
+}
+  .container {
+    padding: 0 5rem;
+}
 }
 @media (max-width: 630px) {
   #project-container {
@@ -216,6 +225,9 @@
         #AboutMe {
         padding: 0 2rem;
         }
+          .container {
+    padding: 0 2rem;
+}
 }
 @media (max-width: 540px) {
     .hero-img .mobile-hero-img {
@@ -250,6 +262,9 @@
   #AboutMe {
     text-align: center;
   }
+    .container {
+    padding: 0 1rem;
+}
 }
 @media (max-width: 420px) {
   footer {
