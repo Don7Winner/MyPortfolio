@@ -88,7 +88,7 @@
     padding: 0;
   }
   .hero-img {
-    background-image: url(../image/Nature.jpg);
+    background-image: url(../image/Tech-image-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -114,11 +114,11 @@
     margin-top: 5rem;
   }
   .logo img{
-    filter: brightness(0) saturate(100%) invert(9%) sepia(29%) saturate(1008%) hue-rotate(200deg) brightness(96%) contrast(110%);
+   filter: brightness(0) saturate(100%) invert(87%) sepia(4%) saturate(589%) hue-rotate(87deg) brightness(120%) contrast(96%);
   }
   #menu-bar {
     display: block;
-    filter: brightness(0) saturate(100%) invert(9%) sepia(29%) saturate(1008%) hue-rotate(200deg) brightness(96%) contrast(110%);
+    filter: brightness(0) saturate(100%) invert(87%) sepia(4%) saturate(589%) hue-rotate(87deg) brightness(120%) contrast(96%);
   }
   #close-bar {
     display: block;
@@ -279,7 +279,7 @@
     grid-template-columns: 1fr;
   }
   footer .social {
-    justify-self: flex-start;
+    justify-self: center;
   }
   .getin-touch {
     padding: 2rem 1rem;
@@ -314,6 +314,7 @@
   }
   footer {
     padding: 0 1rem 1rem;
+    text-align: center;
   }
   .project-img-container img {
     height: auto;
