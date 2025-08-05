@@ -113,8 +113,12 @@
     padding: 0 5rem;
     margin-top: 5rem;
   }
+  .logo img{
+    filter: brightness(0) saturate(100%) invert(9%) sepia(29%) saturate(1008%) hue-rotate(200deg) brightness(96%) contrast(110%);
+  }
   #menu-bar {
     display: block;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(29%) saturate(1008%) hue-rotate(200deg) brightness(96%) contrast(110%);
   }
   #close-bar {
     display: block;
