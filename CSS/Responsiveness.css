@@ -88,7 +88,7 @@
     padding: 0;
   }
   .hero-img {
-    background-image: url(../image/Mobile-gb-img.png);
+    background-image: url(../image/Nature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -146,6 +146,7 @@
   }
   .nav a {
     color: #000;
+    font-size: 1.1rem;
   }
   .lets-talk {
     width: fit-content;
@@ -206,6 +207,9 @@
 }
   .container {
     padding: 0 5rem;
+}
+.testimonial-image {
+  flex-direction: column;
 }
 }
 @media (max-width: 630px) {
@@ -280,8 +284,8 @@
     font-size: 0.6rem;
   }
   #hero .social a svg {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
   }
 
   .hero-img .mobile-hero-img {
@@ -343,4 +347,16 @@
   header {
     width: 100vw;
   }
+  .testimonial-card {
+    padding: 2rem 1rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 339px){
+  h1{
+    font-size: 1.3rem;
+  }
+  .details p{
+    padding: 0 1rem;
+}
 }
