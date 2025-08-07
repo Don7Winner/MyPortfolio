@@ -1,11 +1,23 @@
+
 @media (max-width: 1280px) {
+  .footer{
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+   max-width: 1280px;
+  }
   #hero {
     padding: 10rem 7rem 0;
+  }
+}
+@media(max-width: 1233px){
+  #hero{
+    padding-right: 3rem;
   }
 }
 @media (max-width: 1150px) {
   #hero {
     padding: 10rem 5rem 0;
+    padding-right: 2rem;
   }
   header {
     padding: 1rem 2rem;
@@ -24,10 +36,15 @@
   .myservice h2 {
     justify-self: flex-end;
   }
+   #contact {
+    gap: 5rem;
+    padding: 5rem 2rem 7rem;
+  }
 }
 @media (max-width: 990px) {
   #hero {
     padding: 10rem 2rem 0;
+    padding-right: 1rem;
   }
   header a {
     font-size: 0.8rem;
@@ -45,22 +62,35 @@
   .container {
     padding: 0 2rem;
 }
+.footer{
+  padding-top: 0;
+  padding: 1rem;
+}
+}
+@media (max-width: 937px){
+  .hero-img {
+  height: 400px;
+  width: 500px;
+}
+      #contact {
+        gap: 2rem;
+        padding: 5rem 2rem 7rem;
+    }
 }
 @media (max-width: 896px) {
   h1 {
     font-size: 2rem;
-  }
-  footer {
-    padding: 0 2rem 1rem;
   }
   .project-img-container img {
     height: 200px;
     width: 200px;
   }
   #contact {
-    gap: 3rem;
     padding: 5rem 2rem 7rem;
   }
+  #details {
+    flex-basis: 60%;
+}
 }
 @media (max-width: 828px) {
   #contact {
@@ -69,6 +99,10 @@
   header a {
     font-size: 0.6rem;
   }
+  .hero-img {
+  height: 350px;
+  width: 550px;
+}
 }
 @media (max-width: 768px) {
   body.no-scroll {
@@ -166,6 +200,9 @@
     justify-self: center;
     padding: 2rem 5rem;
   }
+    #hero h1 {
+        animation: fadeInScale 1.2s ease-out, typing 2.5s steps(30, end);
+    }
   .myservice h2 {
     justify-self: center;
   }
@@ -181,6 +218,7 @@
   }
   .skill-header {
     padding: 0 5rem;
+    margin-bottom: 2rem;
   }
   .cards {
     flex-direction: column;
@@ -194,10 +232,13 @@
     flex-direction: column;
     padding: 5rem 5rem 7rem;
   }
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+  .footer{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15rem;
+    row-gap: 2rem;
+    width: 100%;
   }
   .copyright {
     order: 2;
@@ -214,6 +255,12 @@
 }
 .testimonial-image {
   flex-direction: column;
+}
+.tech-img{
+  display: none;
+}
+ #details {
+    flex-basis: 100%;
 }
 }
 @media (max-width: 630px) {
@@ -235,6 +282,9 @@
         }
           .container {
     padding: 0 2rem;
+}
+.footer{
+  column-gap: 10rem;
 }
 }
 @media (max-width: 540px) {
@@ -308,7 +358,9 @@
   #AboutMe {
     padding: 0 1rem;
   }
- 
+ .skill-header {
+    margin-bottom: 1rem;
+  }
   #contact {
     padding: 5rem 1rem 7rem;
   }

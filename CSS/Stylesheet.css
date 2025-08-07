@@ -117,6 +117,7 @@ header {
   justify-content: space-between;
   gap: 4rem;
   padding: 10rem 10rem 0;
+  padding-right: 5rem;
   margin: 0 0 10rem;
 }
 .hero-description {
@@ -124,7 +125,7 @@ header {
 }
 .hero-img {
   height: 500px;
-  width: 400px;
+  width: 500px;
 }
 #hero .desktop-hero-img {
   height: 100%;
@@ -133,13 +134,44 @@ header {
 .hero-img .mobile-hero-img {
   display: none;
 }
-/* Typewriter and Pop-in Animation for h1 */
-h1 .name, h1 .web {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter 3s steps(30, end) forwards;
+.tech-img{
+  height: 100vh;
+  width: auto;
 }
+.tech-img img{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+/* Typewriter and Pop-in Animation for h1 */
+#hero h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeInScale 1.5s ease-out, typing 3s steps(40, end);
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 
 h1 {
   font-size: 2rem;
@@ -585,18 +617,27 @@ hr {
   min-width: 50px;
   padding: 1rem;
 }
-footer {
+.WIcon{
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem 0;
+}
+footer{
   background-color: #000;
+}
+.footer {
   display: flex;
   align-items: flex-end;
-  padding: 0 5rem 1rem;
+  justify-content: center;
+  padding-bottom: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .logo-footer {
   filter: brightness(0) saturate(100%) invert(47%) sepia(85%) saturate(2006%) hue-rotate(171deg) brightness(100%) contrast(109%);
   padding-top: 2rem;
   height: 100px;
   width: auto;
-  /* flex-basis: 50%; */
 }
 .logo-footer img {
   height: 100%;
