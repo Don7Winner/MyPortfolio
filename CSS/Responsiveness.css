@@ -5,20 +5,14 @@
     padding-bottom: 1rem;
    max-width: 1280px;
   }
-  #hero {
-    padding: 10rem 7rem 0;
+  .hero-description{
+    padding-left: 2rem;
   }
+  #project-container {
+  padding: 0 2rem;
 }
-@media(max-width: 1233px){
-  #hero{
-    padding-right: 3rem;
-  }
 }
 @media (max-width: 1150px) {
-  #hero {
-    padding: 10rem 5rem 0;
-    padding-right: 2rem;
-  }
   header {
     padding: 1rem 2rem;
   }
@@ -40,12 +34,11 @@
     gap: 5rem;
     padding: 5rem 2rem 7rem;
   }
+  #hero h1{
+    font-size: 2rem;
+  }
 }
 @media (max-width: 990px) {
-  #hero {
-    padding: 10rem 2rem 0;
-    padding-right: 1rem;
-  }
   header a {
     font-size: 0.8rem;
   }
@@ -66,12 +59,15 @@
   padding-top: 0;
   padding: 1rem;
 }
+.hero-description {
+    width: 500px;
+}
+#hero h1{
+  font-size: 2rem;
+}
 }
 @media (max-width: 937px){
-  .hero-img {
-  height: 400px;
-  width: 500px;
-}
+ 
       #contact {
         gap: 2rem;
         padding: 5rem 2rem 7rem;
@@ -99,21 +95,22 @@
   header a {
     font-size: 0.6rem;
   }
-  .hero-img {
-  height: 350px;
-  width: 550px;
-}
 }
 @media (max-width: 768px) {
   body.no-scroll {
     overflow: hidden;
     height: 100vh;
   }
+  #hero{
+    padding-top: 0;
+    margin: 0;
+  }
   header {
     background-color: transparent;
     position: absolute;
+    z-index: 1;
   }
-  #hero {
+  .hero-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -127,6 +124,8 @@
     background-size: cover;
     width: 100%;
     height: 350px;
+    position: relative;
+    top: 0;
     order: -1;
   }
   .desktop-hero-img {
@@ -137,14 +136,13 @@
     border: 2px solid #fff;
     border-radius: 100px;
     height: 200px;
-    /* width: 200px; */
     position: relative;
     top: 230px;
     left: 50px;
   }
   .hero-description {
     width: 100%;
-    padding: 0 5rem;
+    padding: 0 2rem;
     margin-top: 5rem;
   }
   .logo img{
@@ -189,12 +187,15 @@
   .lets-talk {
     width: fit-content;
   }
-  #AboutMe {
+  #AboutMe{
+    margin: 5rem 0;
+  }
+  .aboutMe-section {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 7rem;
-    padding: 0 5rem;
+    
   }
   .myservice div {
     justify-self: center;
@@ -228,9 +229,12 @@
   .card {
     width: 500px;
   }
-  #contact {
+  .contact-section {
     flex-direction: column;
-    padding: 5rem 5rem 7rem;
+    padding: 5rem 1rem 7rem;
+  }
+  .form{
+    flex-direction: column;
   }
   .footer{
      display: flex;
@@ -266,9 +270,6 @@
 @media (max-width: 630px) {
   #project-container {
     padding: 0 2rem;
-  }
-  #contact {
-    padding: 5rem 2rem 7rem;
   }
   .skill-header {
     padding: 0 2rem;
@@ -323,6 +324,9 @@
     .container {
     padding: 0 1rem;
 }
+#hero h1{
+  font-size: 1.5rem;
+}
 }
 @media (max-width: 420px) {
   footer {
@@ -362,7 +366,7 @@
     margin-bottom: 1rem;
   }
   #contact {
-    padding: 5rem 1rem 7rem;
+    padding: 5rem 0 7rem;
   }
   footer {
     padding: 0 1rem 1rem;
@@ -408,11 +412,12 @@
     padding: 2rem 1rem;
     padding-bottom: 1.5rem;
   }
-}
-@media (max-width: 339px){
-  h1{
+ #hero h1{
     font-size: 1.3rem;
   }
+}
+@media (max-width: 339px){
+ 
   .details p{
     padding: 0 1rem;
 }
