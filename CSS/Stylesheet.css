@@ -264,8 +264,8 @@ h1 .name {
   justify-items: center;
 }
 
-.stat {
-  opacity: 0;
+/* .stat {
+  opacity: 1;
   transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -277,7 +277,7 @@ h1 .name {
 
 .stat:nth-child(1) { transition-delay: 0s; }
 .stat:nth-child(2) { transition-delay: 0.2s; }
-.stat:nth-child(3) { transition-delay: 0.4s; }
+.stat:nth-child(3) { transition-delay: 0.4s; } */
 
 /* Ensure existing styles for stat-number and stat-label are not overridden */
 .stat-number {
